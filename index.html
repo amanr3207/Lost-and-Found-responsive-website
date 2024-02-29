@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost & Found </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="head">
+            <a href="#" class="logo"><img src="images/logo.png" alt=""></a>
+            <div class="toggle">
+                <div class="toggleIcon" onclick="menuToggle();"></div>
+            </div>
+        </div>
+        <div class="menu-overlay">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">About US</a></li>
+           
+                <li><a href="lost.html">Lost Post</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="social-area">
+            <div class="user-area">
+                <a href="#" class="user"><i class="fa fa-user"></i></a>
+            </div>
+            <div class="social-link">
+                <div class="circle" onclick="menus();">
+                    <i class="fa fa-plus" id="plus"></i>
+                </div>
+                <div class="links" id="links"> 
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-youtube-play"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <section class="home">
+            <div class="detail">
+               
+                <div class="switch-btn" id="switch-title">
+                    <a href="#found" class="switch active">Found</a>
+                    <a href="#lost" class="switch">Lost</a>
+                </div>
+                <ul class="earth">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            
+                <div class="content">
+                    <div class="slide active" id="found">
+                        <div class="inner">
+                            
+                            <form action="">
+                                <h1>Found Form</h1>
+                                <div class="inputBx">
+                                    <label for="">Item Found</label>
+                                    <input type="text" name="" placeholder="Enter Item..." required>
+                                </div>
+                                <div class="inputBx">
+                                    <label for="">Category</label>
+                                    <select>
+                                        <option selected>Select Item Category</option>
+                                        <option>Electronics</option>
+                                        <option>Personal Accessories</option>
+                                        <option>Animals/Pets</option>
+                                        <option>Baggage/Bags/Luggage</option>
+                                        <option>Clothing</option>
+                                        <option>Footwear</option>
+                                        <option>Household/Tools</option>
+                                        <option>Jewellery </option>
+                                        <option>Musical Equipment</option>
+                                        <option>Sporting Goods</option>
+                                        <option>Tickets</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="inputBx">
+                                    <label for="">Date Found</label>
+                                    <input type="date" name=""
+                                    min="2021-01-01" max="2023-12-31" placeholder="dd-mm-yyyy" required>
+                                </div>
+                                <div class="inputBx">
+                                    <label for="">Location</label>
+                                    <select id="month" name="month">
+                                        <option selected>select location</option>
+                                        <option>Block A1</option>
+                                        <option>Block A2</option>
+                                        <option>Block A3</option>
+                                        <option>Block B1</option>
+                                        <option>Block B2</option>
+                                        <option>Block B3</option>
+                                        <option>Block B4</option>
+                                        <option>Block C1</option>
+                                        <option>Block C2</option>
+                                        <option>Block C3</option>
+                                        <option>Block D1</option>
+                                        <option>Block D2</option>
+                                        <option>Block D3</option>
+                                        <option>Block D4</option>
+                                        <option>Block D5</option>
+                                        <option>Block D6</option>
+                                        <option>Block D7</option>
+                                        <option>Block DD1</option>
+                                        <option>Block DD2</option>
+                                        <option>Gate 1</option>
+                                        <option>GAte 2</option>
+                                        <option>Gate 3</option>
+                                        <option>Gate 4</option>
+                                        <option>others</option>
+                                    </select>
+                                </div>
+                                <div class="inputBx">
+                                    <label for="">Location</label>
+                                    <select id="month" name="month">
+                                        <option selected> Select Room</option>
+                                        <option>201</option>
+                                        <option>202</option>
+                                        <option>203</option>
+                                        <option>204</option>
+                                        <option>205</option>
+                                        <option>206</option>
+                                        <option>207</option>
+                                        <option>208</option>
+                                        <option>209</option>
+                                        <option>210</option>
+                                        <option>211</option>
+                                        <option>212</option>
+                                        <option>213</option>
+                                        <option>214</option>
+                                        <option>215</option>
+                                        <option>216</option>
+                                        <option>301</option>
+                                        <option>302</option>
+                                        <option>303</option>
+                                        <option>304</option>
+                                        <option>305</option>
+                                        <option>306</option>
+                                        <option>307</option>
+                                        <option>308</option>
+                                        <option>309</option>
+                                        <option>310</option>
+                                        <option>311</option>
+                                        <option>312</option>
+                                        <option>313</option>
+                                        <option>314</option>
+                                        <option>315</option>
+                                        <option>316</option>
+                                        <option>401</option>
+                                        <option>402</option>
+                                        <option>403</option>
+                                        <option>404</option>
+                                        <option>405</option>
+                                        <option>406</option>
+                                        <option>407</option>
+                                        <option>408</option>
+                                        <option>409</option>
+                                        <option>410</option>
+                                        <option>411</option>
+                                        <option>412</option>
+                                        <option>413</option>
+                                        <option>414</option>
+                                        <option>415</option>
+                                        <option>416</option>
+                                        <option>501</option>
+                                        <option>502</option>
+                                        <option>503</option>
+                                        <option>504</option>
+                                        <option>505</option>
+                                        <option>506</option>
+                                        <option>507</option>
+                                        <option>508</option>
+                                        <option>509</option>
+                                        <option>510</option>
+                                        <option>511</option>
+                                        <option>512</option>
+                                        <option>513</option>
+                                        <option>514</option>
+                                        <option>515</option>
+                                        <option>516</option>
+                                        <option>601</option>
+                                        <option>602</option>
+                                        <option>603</option>
+                                        <option>604</option>
+                                        <option>605</option>
+                                        <option>606</option>
+                                        <option>607</option>
+                                        <option>608</option>
+                                        <option>609</option>
+                                        <option>610</option>
+                                        <option>611</option>
+                                        <option>612</option>
+                                        <option>613</option>
+                                        <option>614</option>
+                                        <option>615</option>
+                                        <option>616</option> 
+                                        <option>701</option>
+                                        <option>702</option>
+                                        <option>703</option>
+                                        <option>704</option>
+                                        <option>705</option>
+                                        <option>706</option>
+                                        <option>707</option>
+                                        <option>708</option>
+                                        <option>709</option>
+                                        <option>710</option>
+                                        <option>711</option>
+                                        <option>712</option>
+                                        <option>713</option>
+                                        <option>714</option>
+                                        <option>715</option>
+                                        <option>716</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                                <div class="inputBx">
+                                    <label for="">Additional Information</label>
+                                    <input type="text" required>
+                                </div>
+                                <div class="inputBx">
+                                    <label for="">Upload Image</label>
+                                    <input type="file" required>
+                                </div>
+                                <div class="inputBx">
+                                    <input type="submit" class="btn" value="Search">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="slide" id="lost">
+                        <div class="inner">
+                            
+                            <form action="">
+                                <h1>Lost Form</h1>
+                                <div class="inputBx">
+                                    <label for="">Item Lost</label>
+                                    <input type="text" name="" placeholder="Enter Item..." required>
+                                </div>
+                                <div class="inputBx">
+                                    <label for="">Category</label>
+                                    <select>
+                                        <option selected>Select Item Category</option>
+                                        <option>Electronics</option>
+                                        <option>Personal Accessories</option>
+                                        <option>Animals/Pets</option>
+                                        <option>Baggage/Bags/Luggage</option>
+                                        <option>Clothing</option>
+                                        <option>Footwear</option>
+                                        <option>Household/Tools</option>
+                                        <option>Jewellery </option>
+                                        <option>Musical Equipment</option>
+                                        <option>Sporting Goods</option>
+                                        <option>Tickets</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="inputBx">
+                                    <label for="">Date Lost</label>
+                                    <input type="date" name=""
+                                    min="2021-01-01" max="2021-12-31" placeholder="dd-mm-yyyy" required>
+                                    <span class="validity"></span>
+                                </div>
+                                <div class="inputBx">
+                                    <label for="">Location</label>
+                                    <select id="month" name="month">
+                                        <option selected>Enter Location</option>
+                                        <option>Block A1</option>
+                                        <option>Block A2</option>
+                                        <option>Block A3</option>
+                                        <option>Block B1</option>
+                                        <option>Block B2</option>
+                                        <option>Block B3</option>
+                                        <option>Block B4</option>
+                                        <option>Block C1</option>
+                                        <option>Block C2</option>
+                                        <option>Block C3</option>
+                                        <option>Block D1</option>
+                                        <option>Block D2</option>
+                                        <option>Block D3</option>
+                                        <option>Block D4</option>
+                                        <option>Block D5</option>
+                                        <option>Block D6</option>
+                                        <option>Block D7</option>
+                                        <option>Block DD1</option>
+                                        <option>Block DD2</option>
+                                        <option>Gate 1</option>
+                                        <option>GAte 2</option>
+                                        <option>Gate 3</option>
+                                        <option>Gate 4</option>
+                                        <option>others</option>
+                                    </select>
+                                </div>
+                                <div class="inputBx">
+                                    <label for="">Location</label>
+                                    <select id="month" name="month">
+                                        <option selected> Select Room</option>
+                                        <option>201</option>
+                                        <option>202</option>
+                                        <option>203</option>
+                                        <option>204</option>
+                                        <option>205</option>
+                                        <option>206</option>
+                                        <option>207</option>
+                                        <option>208</option>
+                                        <option>209</option>
+                                        <option>210</option>
+                                        <option>211</option>
+                                        <option>212</option>
+                                        <option>213</option>
+                                        <option>214</option>
+                                        <option>215</option>
+                                        <option>216</option>
+                                        <option>301</option>
+                                        <option>302</option>
+                                        <option>303</option>
+                                        <option>304</option>
+                                        <option>305</option>
+                                        <option>306</option>
+                                        <option>307</option>
+                                        <option>308</option>
+                                        <option>309</option>
+                                        <option>310</option>
+                                        <option>311</option>
+                                        <option>312</option>
+                                        <option>313</option>
+                                        <option>314</option>
+                                        <option>315</option>
+                                        <option>316</option>
+                                        <option>401</option>
+                                        <option>402</option>
+                                        <option>403</option>
+                                        <option>404</option>
+                                        <option>405</option>
+                                        <option>406</option>
+                                        <option>407</option>
+                                        <option>408</option>
+                                        <option>409</option>
+                                        <option>410</option>
+                                        <option>411</option>
+                                        <option>412</option>
+                                        <option>413</option>
+                                        <option>414</option>
+                                        <option>415</option>
+                                        <option>416</option>
+                                        <option>501</option>
+                                        <option>502</option>
+                                        <option>503</option>
+                                        <option>504</option>
+                                        <option>505</option>
+                                        <option>506</option>
+                                        <option>507</option>
+                                        <option>508</option>
+                                        <option>509</option>
+                                        <option>510</option>
+                                        <option>511</option>
+                                        <option>512</option>
+                                        <option>513</option>
+                                        <option>514</option>
+                                        <option>515</option>
+                                        <option>516</option>
+                                        <option>601</option>
+                                        <option>602</option>
+                                        <option>603</option>
+                                        <option>604</option>
+                                        <option>605</option>
+                                        <option>606</option>
+                                        <option>607</option>
+                                        <option>608</option>
+                                        <option>609</option>
+                                        <option>610</option>
+                                        <option>611</option>
+                                        <option>612</option>
+                                        <option>613</option>
+                                        <option>614</option>
+                                        <option>615</option>
+                                        <option>616</option> 
+                                        <option>701</option>
+                                        <option>702</option>
+                                        <option>703</option>
+                                        <option>704</option>
+                                        <option>705</option>
+                                        <option>706</option>
+                                        <option>707</option>
+                                        <option>708</option>
+                                        <option>709</option>
+                                        <option>710</option>
+                                        <option>711</option>
+                                        <option>712</option>
+                                        <option>713</option>
+                                        <option>714</option>
+                                        <option>715</option>
+                                        <option>716</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                                <div class="inputBx">
+                                    <label for="">Additional Information</label>
+                                    <input type="text" required>
+                                </div>
+                                <div class="inputBx" >
+                                    <label for="">Upload Image</label>
+                                    <input type="file" id="image_box" accept="image/png , image/jpg">
+                                </div>
+                                <div class="inputBx">
+                                    <input type="submit" class="btn" value="Submit">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+        </section>
+                <!-- Login and Signup Form -->
+                <div class="banner-form">  
+                    <div class="login-form">
+                        <a href="#" class="form-cancel">
+                            <i class="fa fa-times"></i>
+                        </a>
+                        <strong>Log In</strong>
+                        <form action="">
+                            <input type="email" name="email" placeholder="example@gmail.com" required>
+                            <input type="password" name="password" placeholder="Password" required>
+                            <input type="submit" value="Log In">
+                        </form>
+                        <div class="form-btns">
+                            <a href="#" class="forget">Forget Your Password?</a>
+                            <a href="#" class="sign-up-btn">Create Account?</a>
+                        </div>
+                    </div>
+
+                    <div class="sign-up-form">
+                        <a href="#" class="form-cancel">
+                            <i class="fa fa-times"></i>
+                        </a>
+                        <strong>Sign Up</strong>
+                        <form action="">
+                            <input type="text" name="fullname" placeholder="Full Name" required>
+                            <input type="email" name="email" placeholder="example@gmail.com" required>
+                            <input type="password" name="password" placeholder="Password" required>
+                            <input type="submit" value="Sign Up">
+                        </form>
+                        <div class="form-btns">
+                            <a href="#" class="already-account">Already Have an Account?</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Login and Signup Form -->
+
+        <section class="about">
+            <h4 class="heading"><span>About US</span></h4>
+            <div class="content">
+                <p>We will help you to find your lost items.But we will not be responsible for any item . This plateform really  helpfull for  students and faculty.our website is totally depend upon  who have found the lost item  and that person is honest or not. </p>
+            </div>
+            <div class="imgBx">
+                <img src="intro.gif" alt="">
+            </div>
+        </section>
+
+        <section class="post">
+            <h4 class="heading"><span>Lost Items</span></h4>
+            <div class="content">
+                <div class="container">
+                    <div class="items">
+                        <a href="#lightbox-1" class="open">Ear Buds</a>
+                        <p><strong>Location:</strong> Block C1,Room No: 712</p>
+                        <p><strong>Category:</strong> Electronics</p>
+                    </div>
+                    <div class="items">
+                        <a href="#lightbox-2" class="open">Smart Watch</a>
+                        <p><strong>Location:</strong>  Block B1 </p>
+                        <p><strong>Category:</strong> Electronics</p>
+                    </div>
+                    <div class="items">
+                        <a href="#lightbox-3" class="open">Motorola Adapter</a>
+                        <p><strong>Location:</strong> Block C2,Room: 604</p>
+                        <p><strong>Category:</strong> Electronics</p>
+                    </div>
+                    <div class="items">
+                        <a href="#lightbox-4" class="open">Wallet</a>
+                        <p><strong>Location:</strong>Block C1 </p>
+                        <p><strong>Category:</strong> Personal Accessories</p>
+                    </div>
+               
+                   
+            <div id="lightbox-1" class="lightbox-basic zoom mfp-hide">
+                <div class="lost-post">
+                    <button title="Close (Esc)" type="button" class="mfp-close x-button">x</button>
+                    <div class="post-title">
+                        <h1>Lost Item Details: Ear Buds</h1>
+                        <span>Item ID: 19-0501</span>
+                    </div>
+                    <div class="post-outer">
+                        <div class="post-detail">
+                            <div class="post-area">
+                                <h6>Lost Item</h6>
+                                <p>bOAt earbuds</p>
+                            </div>
+                            <div class="post-area">
+                                <h6>Category</h6>
+                                <p>Electronics</p>
+                            </div>
+                            <div class="post-area">
+                                <h6>Lost Date</h6>
+                                <p>12/03/2023</p>
+                            </div>
+                        </div>
+                        <div class="post-detail">
+                            <div class="imgBx">
+                                <img src="earbud.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="post-detail">
+                            <div class="post-area">
+                                <h6>Lost Location</h6>
+                                <p>Block C1,Room No: 712</p>
+                            </div>
+                            <div class="post-area">
+                                <h6>Additional Information</h6>
+                                <p>Colour Black</p>
+                            </div>
+                            <div class="post-area">
+                                <h6>Contact Info</h6>
+                                <a href="">View Contact Info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div id="lightbox-2" class="lightbox-basic zoom mfp-hide">
+                <div class="lost-post">
+                    <button title="Close (Esc)" type="button" class="mfp-close x-button">x</button>
+                    <div class="post-title">
+                        <h1>Lost Item Details: Smart Watch</h1>
+                        <span>Item ID: 23-1501</span>
+                    </div>
+                    <div class="post-outer">
+                        <div class="post-detail">
+                            <div class="post-area">
+                                <h6>Lost Item</h6>
+                                <p>Smart Watch</p>
+                            </div>
+                            <div class="post-area">
+                                <h6>Category</h6>
+                                <p>Watch</p>
+                            </div>
+                            <div class="post-area">
+                                <h6>Lost Date</h6>
+                                <p>04/01/2023</p>
+                            </div>
+                        </div>
+                        <div class="post-detail">
+                            <div class="imgBx">
+                                <img src="watch.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="post-detail">
+                            <div class="post-area">
+                                <h6>Lost Location</h6>
+                                <p>  Block B1 </p>
+                            </div>
+                            <div class="post-area">
+                                <h6>Additional Information</h6>
+                                <p>Black Colour,</p>
+                            </div>
+                            <div class="post-area">
+                                <h6>Contact Info</h6>
+                                <a href="">View Contact Info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="lightbox-3" class="lightbox-basic zoom mfp-hide">
+                <div class="lost-post">
+                    <button title="Close (Esc)" type="button" class="mfp-close x-button">x</button>
+                    <div class="post-title">
+                        <h1>Motorola Adapter</h1>
+                        <span>Item ID: 09-0501</span>
+                    </div>
+                    <div class="post-outer">
+                        <div class="post-detail">
+                            <div class="post-area">
+                                <h6>Lost Item</h6>
+                                <p>Motorola Adapter</p>
+                            </div>
+                            <div class="post-area">
+                                <h6>Category</h6>
+                                <p>Electrical</p>
+                            </div>
+                            <div class="post-area">
+                                <h6>Lost Date</h6>
+                                <p>28/02/2023</p>
+                            </div>
+                        </div>
+                        <div class="post-detail">
+                            <div class="imgBx">
+                                <img src="adapter.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="post-detail">
+                            <div class="post-area">
+                                <h6>Lost Location</h6>
+                                <p>Block C2,Room: 604</p>
+                            </div>
+                            <div class="post-area">
+                                <h6>Additional Information</h6>
+                                <p>33W , Black colour</p>
+                            </div>
+                            <div class="post-area">
+                                <h6>Contact Info</h6>
+                                <a href="">View Contact Info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="lightbox-4" class="lightbox-basic zoom mfp-hide">
+                <div class="lost-post">
+                    <button title="Close (Esc)" type="button" class="mfp-close x-button">x</button>
+                    <div class="post-title">
+                        <h1>Lost Item Details: Wallet</h1>
+                        <span>Item ID: 29-0001</span>
+                    </div>
+                    <div class="post-outer">
+                        <div class="post-detail">
+                            <div class="post-area">
+                                <h6>Lost Item</h6>
+                                <p>Wallet</p>
+                            </div>
+                            <div class="post-area">
+                                <h6>Category</h6>
+                                <p>Personal Accessories</p>
+                            </div>
+                            <div class="post-area">
+                                <h6>Lost Date</h6>
+                                <p>21/03/2023</p>
+                            </div>
+                        </div>
+                        <div class="post-detail">
+                            <div class="imgBx" id="display_image">
+                                <img src="images/wallet.png" alt="">
+                            </div>
+                        </div>
+                        <div class="post-detail">
+                            <div class="post-area">
+                                <h6>Lost Location</h6>
+                                <p> Block C1</p>
+                            </div>
+                            <div class="post-area">
+                                <h6>Additional Information</h6>
+                                <p>Black Colour,i have found it in Food Republic</p>
+                            </div>
+                            <div class="post-area">
+                                <h6>Contact Info</h6>
+                                <a href="">View Contact Info</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="post-outer">
+                        <div class="post-detail">
+                            <div class="post-area" id="post_area">
+                              
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+                   
+           
+        </section>
+        
+        
+        <section class="contact">
+            <h4 class="heading"><span>Contact US</span></h4>
+            <div class="content">
+                <div class="detail">
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-map-marker fa-spin"></i></div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>CHANDIGARH UNIVERSITY, NH-05, Ludhiana - Chandigarh State Hwy, Punjab 140413<br/> City, Country</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-phone fa-spin"></i></div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>00 123456789</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-envelope-o fa-spin"></i></div>
+                        <div class="text">
+                            <h3>Email Address</h3>
+                            <p>xyz@example.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <div class="form">
+                    <form action="">
+                        <div class="input-area">
+                            <input type="text" name="" required="required">
+                            <span>FULL NAME</span>
+                        </div>
+                        <div class="input-area">
+                            <input type="text" name="" required="required">
+                            <span>EMAIL ADDRESS</span>
+                        </div>
+                        <div class="input-area">
+                            <input type="text" name="" required="required">
+                            <span>SUBJECT</span>
+                        </div>
+                        <div class="input-area">
+                            <textarea name="" required="required"></textarea>
+                            <span>MESSAGE</span>
+                        </div>
+                        <div class="input-area">
+                            <input type="submit" value="Send">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <div class="copyright">
+            <h3><a href=""><i class="fa fa-copyright"></i> 2023 - Lost&Found</a></h3>
+        </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
