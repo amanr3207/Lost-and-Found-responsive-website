@@ -851,7 +851,7 @@ body{
     box-shadow: 0 0 100px rgb(244, 244, 230),inset 0 0 100px rgba(0,0,0,.7);
     animation: earth-rotate 60s linear infinite;
     overflow: hidden;
-    transition: 1.5s;
+    transition: 1s;
     z-index: -1;
 }
 
