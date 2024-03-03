@@ -70,7 +70,7 @@
                                 </div>
                                 <div class="inputBx">
                                     <label for="">Category</label>
-                                    <select>
+                                    <select title="Select Item Category">
                                         <option selected>Select Item Category</option>
                                         <option>Electronics</option>
                                         <option>Personal Accessories</option>
@@ -90,11 +90,11 @@
                                 <div class="inputBx">
                                     <label for="">Date Found</label>
                                     <input type="date" name=""
-                                    min="2021-01-01" max="2023-12-31" placeholder="dd-mm-yyyy" required>
+                                    min="2021-01-01" max="2024-12-31" placeholder="dd-mm-yyyy" required>
                                 </div>
                                 <div class="inputBx">
                                     <label for="">Location</label>
-                                    <select id="month" name="month">
+                                    <select id="unique-month" name="month" title="Select Month">
                                         <option selected>select location</option>
                                         <option>Block A1</option>
                                         <option>Block A2</option>
@@ -124,7 +124,7 @@
                                 </div>
                                 <div class="inputBx">
                                     <label for="">Location</label>
-                                    <select id="month" name="month">
+                                    <select id="unique-month" name="month" title="Select Month">
                                         <option selected> Select Room</option>
                                         <option>201</option>
                                         <option>202</option>
@@ -227,11 +227,13 @@
                                 </div>
                                 <div class="inputBx">
                                     <label for="">Additional Information</label>
-                                    <input type="text" required>
+                                    <label for="">Input Label</label>
+                                    <input type="text" title="Input Title" placeholder="Input Placeholder" required>
                                 </div>
                                 <div class="inputBx">
                                     <label for="">Upload Image</label>
-                                    <input type="file" required>
+                                    <label for="fileInput">Upload File</label>
+                                    <input type="file" id="fileInput" required>
                                 </div>
                                 <div class="inputBx">
                                     <input type="submit" class="btn" value="Search">
@@ -251,7 +253,7 @@
                                 </div>
                                 <div class="inputBx">
                                     <label for="">Category</label>
-                                    <select>
+                                    <select title="Select an option">
                                         <option selected>Select Item Category</option>
                                         <option>Electronics</option>
                                         <option>Personal Accessories</option>
@@ -271,12 +273,12 @@
                                 <div class="inputBx">
                                     <label for="">Date Lost</label>
                                     <input type="date" name=""
-                                    min="2021-01-01" max="2021-12-31" placeholder="dd-mm-yyyy" required>
+                                    min="2021-01-01" max="2024-12-31" placeholder="dd-mm-yyyy" required>
                                     <span class="validity"></span>
                                 </div>
                                 <div class="inputBx">
                                     <label for="">Location</label>
-                                    <select id="month" name="month">
+                                    <select id="month" name="month" title="Select Month">
                                         <option selected>Enter Location</option>
                                         <option>Block A1</option>
                                         <option>Block A2</option>
